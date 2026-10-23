@@ -148,10 +148,10 @@ if (zonaQuiz) {
         });
         if (elegida === q.c) {
           puntos++;
-          zonaQuiz.querySelector(".explicacion").textContent = "✅ ¡Correcto! " + q.e;
+          zonaQuiz.querySelector(".explicacion").textContent = "¡Correcto! " + q.e;
         } else {
           btn.classList.add("incorrecta");
-          zonaQuiz.querySelector(".explicacion").textContent = "❌ Incorrecto. " + q.e;
+          zonaQuiz.querySelector(".explicacion").textContent = "Incorrecto. " + q.e;
         }
         zonaQuiz.querySelector("#siguiente").classList.remove("oculto");
       });
@@ -166,8 +166,8 @@ if (zonaQuiz) {
   function mostrarResultado() {
     const porcentaje = Math.round((puntos / preguntas.length) * 100);
     let mensaje = "¡Sigue aprendiendo! Revisa las otras secciones y vuelve a intentarlo.";
-    if (porcentaje >= 80) mensaje = "¡Excelente! Eres un experto del siglo XXI 🚀";
-    else if (porcentaje >= 50) mensaje = "¡Muy bien! Sabes bastante del siglo XXI 👏";
+    if (porcentaje >= 80) mensaje = "¡Excelente! Eres un experto del siglo XXI";
+    else if (porcentaje >= 50) mensaje = "¡Muy bien! Sabes bastante del siglo XXI";
     zonaQuiz.innerHTML = `
       <div class="tarjeta resultado">
         <p>Tu resultado</p>
