@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personas | El Siglo XXI</title>
+  <meta name="description" content="Sitio interactivo sobre el siglo XXI: historia, inventos, personas, futuro y un quiz.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
+</head>
+<body>
+  <div id="progreso"></div>
+
+  <nav class="nav">
+    <div class="contenedor">
+      <a href="index.html" class="logo">Siglo XXI</a>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="historia.html">Historia</a></li>
+        <li><a href="inventos.html">Inventos</a></li>
+        <li><a href="personas.html">Personas</a></li>
+        <li><a href="futuro.html">Futuro</a></li>
+        <li><a href="quiz.html">Quiz</a></li>
+      </ul>
+      <div class="nav-botones">
+        <button class="btn-icono" id="btn-tema" aria-label="Cambiar tema">🌙</button>
+        <button class="btn-icono" id="btn-menu" aria-label="Abrir menú">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="contenedor">
+      <span class="etiqueta">👩‍🔬 Personas</span>
+      <h1>Quiénes están <span>cambiando el mundo</span></h1>
+      <p>Científicos, inventores y empresarios que marcaron el siglo XXI. Haz clic en una tarjeta para darle la vuelta.</p>
+    </div>
+  </header>
+
+  <section>
+    <div class="contenedor">
+      <input type="search" id="buscador" class="buscador" placeholder="🔍 Buscar por nombre o tema (ej: vacunas, Nobel, IA)">
+
+      <div class="grid">
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">JD</div><h3>Jennifer Doudna y Emmanuelle Charpentier</h3><small>Bioquímicas · Nobel de Química 2020</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Crearon CRISPR, unas "tijeras" moleculares para editar genes. Ya se usa para curar enfermedades de la sangre.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">KK</div><h3>Katalin Karikó y Drew Weissman</h3><small>Investigadores · Nobel de Medicina 2023</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Sus estudios del ARN mensajero hicieron posibles las vacunas contra el COVID-19, que salvaron millones de vidas.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">DH</div><h3>Demis Hassabis</h3><small>Google DeepMind · Nobel de Química 2024</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Lidera DeepMind, creadora de AlphaFold, una IA que predice la forma de las proteínas y ayuda a la ciencia.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">DB</div><h3>David Baker</h3><small>Bioquímico · Nobel de Química 2024</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Usa computadores para diseñar proteínas completamente nuevas que no existen en la naturaleza.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">JM</div><h3>John Martinis</h3><small>Físico · Nobel de Física 2025</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Ganó el Nobel junto a John Clarke y Michel Devoret por experimentos que son la base de la computación cuántica.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">OY</div><h3>Omar Yaghi</h3><small>Químico · Nobel de Química 2025</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Creó los MOFs, materiales llenos de poros que pueden sacar agua del aire del desierto o atrapar CO₂.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">SJ</div><h3>Steve Jobs</h3><small>Cofundador de Apple · 1955–2011</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Presentó el iPhone en 2007 y cambió para siempre la forma en que usamos los teléfonos.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">JH</div><h3>Jensen Huang</h3><small>Fundador de NVIDIA</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Su empresa fabrica los chips (GPU) con los que se entrena la mayoría de la inteligencia artificial.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">EM</div><h3>Elon Musk</h3><small>Tesla y SpaceX</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Impulsó los autos eléctricos con Tesla y los cohetes reutilizables con SpaceX.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">MY</div><h3>Malala Yousafzai</h3><small>Activista · Nobel de la Paz 2014</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Defiende el derecho de las niñas a ir a la escuela. Es la persona más joven en ganar un Nobel.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">GT</div><h3>Greta Thunberg</h3><small>Activista climática</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Empezó a protestar sola frente al parlamento sueco en 2018 e inspiró a millones de jóvenes a defender el clima.</p></div>
+        </div></div>
+
+        <div class="persona revelar"><div class="persona-interior">
+          <div class="cara frente"><div class="avatar">TB</div><h3>Tim Berners-Lee</h3><small>Creador de la Web</small><div class="pista">Toca para saber más ↻</div></div>
+          <div class="cara atras"><p>Inventó la World Wide Web en 1989 y hoy trabaja para que internet sea abierta y respete la privacidad.</p></div>
+        </div></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="contenedor">
+      <div class="menu-pie">
+        <a href="index.html">Inicio</a>
+        <a href="historia.html">Historia</a>
+        <a href="inventos.html">Inventos</a>
+        <a href="personas.html">Personas</a>
+        <a href="futuro.html">Futuro</a>
+        <a href="quiz.html">Quiz</a>
+      </div>
+      <p>El Siglo XXI · Proyecto escolar · 2026</p>
+    </div>
+  </footer>
+
+  <button id="subir" aria-label="Volver arriba">↑</button>
+  <script src="js/main.js"></script>
+</body>
+</html>
