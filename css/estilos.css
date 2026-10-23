@@ -216,22 +216,6 @@ a.tarjeta { text-decoration: none; color: inherit; }
 .barra-fondo { height: 12px; background: var(--surface-2); border-radius: 999px; overflow: hidden; }
 .barra-relleno { height: 100%; width: 0; background: var(--grad); border-radius: 999px; transition: width 1.4s ease; }
 
-/* ===== Quiz ===== */
-.quiz { max-width: 680px; margin: 0 auto; }
-.quiz .tarjeta:hover { transform: none; }
-.quiz-progreso { color: var(--muted); font-size: 0.9rem; margin-bottom: 8px; }
-.opciones { display: grid; gap: 10px; margin: 20px 0; }
-.opcion {
-  text-align: left; padding: 14px 18px; border-radius: 12px; border: 2px solid var(--border);
-  background: var(--surface-2); color: var(--text); cursor: pointer; font-family: inherit; font-size: 1rem;
-}
-.opcion:hover:not(:disabled) { border-color: var(--primary); }
-.opcion.correcta { border-color: #2f9e44; background: color-mix(in srgb, #2f9e44 20%, var(--surface)); }
-.opcion.incorrecta { border-color: #e03131; background: color-mix(in srgb, #e03131 20%, var(--surface)); }
-.explicacion { color: var(--muted); min-height: 1.6em; }
-.resultado { text-align: center; }
-.resultado .numero { font-size: 4rem; font-weight: 800; background: var(--grad); -webkit-background-clip: text; background-clip: text; color: transparent; }
-
 /* ===== Cita ===== */
 .cita {
   text-align: center; font-size: clamp(1.1rem, 3vw, 1.5rem); font-style: italic;
